@@ -140,7 +140,7 @@ def gen_uri(servers):
                                    ])
                 decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
-                    group=encode("连接世界"))
+                    group=encode("LinkWord"))
 
                 ss_uri = 'ssr://{endoced}'.format(
                     endoced=encode(decoded))
@@ -167,9 +167,9 @@ def gen_uri(servers):
                     'plain',
                     encode(server['password'])
                 ])
-                ssr_decoded += '/?remarks=linkword.tk&group={group}'.format(
+                ssr_decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
-                    group=encode("连接世界"))
+                    group=encode("LinkWord"))
 
                 ssr_uri = 'ssr://{endoced}'.format(
                     endoced=encode(ssr_decoded))
@@ -190,7 +190,7 @@ def gen_uri(servers):
                 # "udp_timeout": 60,
                 # "fast_open": False,
                 # "workers": 1,
-                "group": "连接世界"
+                "group": "LinkWord"
             }
             for key in ['obfs', 'method', 'ssr_protocol', 'obfsparam', 'protoparam', 'udpport', 'uot']:
                 if key in server:
