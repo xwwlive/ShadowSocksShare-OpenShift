@@ -140,7 +140,7 @@ def gen_uri(servers):
                                    ])
                 decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
-                    group=encode("Charles Xu"))
+                    group=encode("连接世界"))
 
                 ss_uri = 'ssr://{endoced}'.format(
                     endoced=encode(decoded))
@@ -169,7 +169,7 @@ def gen_uri(servers):
                 ])
                 ssr_decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
-                    group=encode("Charles Xu"))
+                    group=encode("连接世界"))
 
                 ssr_uri = 'ssr://{endoced}'.format(
                     endoced=encode(ssr_decoded))
@@ -190,7 +190,7 @@ def gen_uri(servers):
                 # "udp_timeout": 60,
                 # "fast_open": False,
                 # "workers": 1,
-                "group": "Charles Xu"
+                "group": "连接世界"
             }
             for key in ['obfs', 'method', 'ssr_protocol', 'obfsparam', 'protoparam', 'udpport', 'uot']:
                 if key in server:
