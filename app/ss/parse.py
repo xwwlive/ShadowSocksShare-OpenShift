@@ -168,7 +168,7 @@ def gen_uri(servers):
                     encode(server['password'])
                 ])
                 ssr_decoded += '/?remarks={remarks}&group={group}'.format(
-                    remarks=encode(server['remarks']),
+                    remarks=encode("linkword.tk"),
                     group=encode("连接世界"))
 
                 ssr_uri = 'ssr://{endoced}'.format(
