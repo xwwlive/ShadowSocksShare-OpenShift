@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% block title %}ShadowSocks免费订阅节点{% endblock %}
-
 {% block content %}
-
-
 <div id="announcement" style="color: #311315">
   <h2>免责声明</h2>
   <h3>
@@ -14,23 +11,15 @@
     请于24小时之内删掉与本站相关的一切内容，否则出现一切问题本站作者概不负责。
   </h3>
 </div>
-
-
-
-
 <fieldset>
-
   <legend><strong>ShadowSocks服务器信息</strong></legend>
   {% for server in servers %}
-
   {% endfor %}
   <h3>使用说明:</h3>
   复制下面的链接进行订阅<br><br>
-  <a target="_blank" href="/subscribe">SSR订阅地址</a><br>
-
+  <a target="_blank" href="/subscribe">SSR订阅地址一</a><br>
+  <a target="_blank" href="/subscribe">SSR订阅地址二</a><br>
 </fieldset>
-
-
 <script>
 var disqus_config = function () {
 this.page.url = "{{PAGE_URL}}";  // Replace PAGE_URL with your page's canonical URL variable
@@ -43,6 +32,6 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
 {% endblock %}
